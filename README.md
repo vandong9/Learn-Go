@@ -12,6 +12,7 @@ Learning golang
            will be updated again when build
   go.sum  is summary of package imported in this module
   
+  package is cached in /Users/<current user>/go/pkg/mod/cache/download
   log.Fatal => cause app exit
   
  
