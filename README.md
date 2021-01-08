@@ -42,7 +42,8 @@ Learning golang
 # Convention
 
 ## General
-  - Import should group as ex:
+ - Should not use naked return
+ - Import should group as ex:
   import (
 	"fmt"
 	"math"
