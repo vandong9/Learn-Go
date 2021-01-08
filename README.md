@@ -1,6 +1,10 @@
 # Tour
 Learning golang
 
+# Program
+  Program start with package main
+  
+
 # Module
   function init() will be call automatically at program startup, after global variables have been initialized
   build module by command: go build,  the output if execute file BUT can not execute directly, Need to move to directory which install go (ex: /usr/local/go/bin) to be able to called
@@ -15,6 +19,10 @@ Learning golang
   package is cached in /Users/<current user>/go/pkg/mod/cache/download
   log.Fatal => cause app exit
   
+  value wanted to export outside package need have name start with UPPERCASE character
+  
+# Scope
+
  
   
 # Testing
@@ -27,3 +35,17 @@ Learning golang
 # Some package
 ## fmt
   fmt.Sprintf => format string
+
+## rand
+  Before get random value, need set Seed   If not, it will return the last value
+
+# Convention
+
+## General
+  - Import should group as ex:
+  import (
+	"fmt"
+	"math"
+)
+## Package
+  By convention, the package name is the same as the last element of the import path. For instance, the "math/rand" package comprises files that begin with the statement package rand.
