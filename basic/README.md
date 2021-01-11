@@ -81,6 +81,7 @@ Variables declared without an explicit initial value are given default value:
 
 
 ## Channel
+- Create by make keyword: c := make(chan int <, num>) // num is buffer
 - Should check if channel is closed v, ok := <-ch
 - The loop for i := range c receives values from the channel repeatedly until it is closed
 - Only the sender should close a channel, never the receiver.
