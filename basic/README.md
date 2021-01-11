@@ -32,6 +32,7 @@ Variables declared without an explicit initial value are given default value:
 - Changing the elements of a slice modifies the corresponding elements of its underlying array.
 - Other slices that share the same underlying array will see those changes.
 - If the backing array of s is too small to fit all the given values a bigger array will be allocated. The returned slice will point to the newly allocated array.
+- Append a slice to a slice: x = append(x, y...) // x, y is slice.  "..." is must have or compile error
 
 ### Maps
 - Only can create by make keyword
