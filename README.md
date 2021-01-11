@@ -6,8 +6,9 @@ Learning golang
   
 
 # Module
-  function init() will be call automatically at program startup, after global variables have been initialized
-  build module by command: go build,  the output if execute file BUT can not execute directly, Need to move to directory which install go (ex: /usr/local/go/bin) to be able to called
+- Function init() will be call automatically at program startup, after global variables have been initialized.
+- Funciton init is called after all the variable declarations in the package have evaluated their initializers, and those are evaluated only after all the imported packages have been initialized.
+- build module by command: go build,  the output if execute file BUT can not execute directly, Need to move to directory which install go (ex: /usr/local/go/bin) to be able to called
 
 # Package
   command go mod init <module name> will create  go.mod
