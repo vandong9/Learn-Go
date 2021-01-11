@@ -23,6 +23,9 @@ Variables declared without an explicit initial value are given default value:
 - pointer will compare with nil
 
 ### Array
+- Arrays are values. Assigning one array to another copies all the elements
+- In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
+- The size of an array is part of its type. The types [10]int and [20]int are distinct.
 
 ### Slice:
 - A slice does not store any data, it just describes a section of an underlying array.
