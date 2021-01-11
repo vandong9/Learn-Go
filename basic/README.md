@@ -53,10 +53,10 @@ Variables declared without an explicit initial value are given default value:
 - Struct fields are accessed using a dot.
 - Struct fields can be accessed through a struct pointer
 - Add method for struct ex:
-	| func (v Vertex) Scale(f float64) {
-	| 	v.X = v.X * f
-	|	v.Y = v.Y * f
-	| }
+	> func (v Vertex) Scale(f float64) {
+	> 	v.X = v.X * f
+	>	v.Y = v.Y * f
+	> }
 	- Above sample, value X, Y will not keep when complete the function, to update value of X, Y in v, use pointer =>  func (v *Vertex) Scale(f float64)
 
 
@@ -68,7 +68,7 @@ Variables declared without an explicit initial value are given default value:
 - The interface type that specifies zero methods is known as the empty interface. An empty interface may hold values of any type
 - Should check type of interface current refer: f, ok := i.(data type need check)
 - Get current data type of interface current refer: v := i.(type)  // type is keyword
-		switch v := i.(type) {
+		> switch v := i.(type) {
 			case T:
 				// here v has type T
 			case S:
