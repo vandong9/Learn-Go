@@ -23,12 +23,16 @@ Variables declared without an explicit initial value are given default value:
 - pointer will compare with nil
 
 ### Array
+- Arrays are values. Assigning one array to another copies all the elements
+- In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
+- The size of an array is part of its type. The types [10]int and [20]int are distinct.
 
 ### Slice:
 - A slice does not store any data, it just describes a section of an underlying array.
 - Changing the elements of a slice modifies the corresponding elements of its underlying array.
 - Other slices that share the same underlying array will see those changes.
 - If the backing array of s is too small to fit all the given values a bigger array will be allocated. The returned slice will point to the newly allocated array.
+- Append a slice to a slice: x = append(x, y...) // x, y is slice.  "..." is must have or compile error
 
 ### Maps
 - Only can create by make keyword
