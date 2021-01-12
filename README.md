@@ -1,6 +1,3 @@
-# Tour
-Learning golang
-
 # Program
   Program start with package main
   
@@ -8,6 +5,9 @@ Learning golang
 # Module
   function init() will be call automatically at program startup, after global variables have been initialized
   build module by command: go build,  the output if execute file BUT can not execute directly, Need to move to directory which install go (ex: /usr/local/go/bin) to be able to called
+
+  cmd:  go build will build and cache in local
+  cmd: go clean -modcache   to clean download modules
 
 # Package
   command go mod init <module name> will create  go.mod
